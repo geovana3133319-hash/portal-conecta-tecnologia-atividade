@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: 000;
+    color: #f2e8cf;
+    font-family: 'courier new', monospace;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#matrix-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    aligh-items:  center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #00ff66;
+}
+
+.logo-site img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: block;
+}
+
+header {
+    background-color: transparent;
+    color:#00ff66;
+    border: 1px solid #00ff66;
+    padding: 8px 18px;
+    font-family: inherit;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ff66;
+    color: #000;
+}
+
+main {
+    flex: 1;    /* continua empurrando o rodapé para baixo */
+    width:90%;   /* largura do conteúdo */
+    max-width: 800px;    /* limite em telas grandes */
+    margin: 40px auto;      /* afastamento e centralização */
+    text-align: center;         /* texto centralizado */
+
+   .painel {
+    padding: 30px;    /* espaço entre a borda e o conteúdo */
+    background-color: rgba(0, 0, 0, 0.65);    /* fundo escuro semitransparente */
+    border: 1px solid rgba(0, 255, 102, 0.3);     /* borda verde suave */
+    border-radius: 12px;     /* cantos arredondados */
+    margin-bottom: 30px;    /* espaço entre um painel e o próximo. 
+    Sem ele, os dois retângulos ficariam grudados um no outro. */
+   }
+}
+
+main h2{
+font-size: 2rem;
+margin-top: 0;
+}
+
+.caixa-pesquisa {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 12px 18px;
+    border: 1px solid #00ff66;
+    border-radius: 60px;
+    background-color: 0a0a0a;
+    color: #f2e8cf;
+    font-family: inherit;
+    outline: none;
+}
+
+.caixa-pesquisa:focus {
+    box-shadow: 0 0 10px #00ff66;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f2e8cf;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #00ff66;
+}
+
+footer p{
+    margin:0;
+}
+
+footer a {
+    color: #00ff66;
+}
+
+.lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));    /* quer dizer: “crie quantas colunas couberem,
+     cada uma com no mínimo 240px e dividindo o espaço */
+    gap: 20px;
+}
+
+.curso-card {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff66;
+    border-radius: 12px;  
+    padding: 20px;     /* espaço POR DENTRO do cartão, entre a borda e o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));    /* quer dizer: “crie quantas colunas couberem,
+     cada uma com no mínimo 240px e dividindo o espaço */
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.65);    /* fundo escuro semitransparente */
+    border: 1px solid rgba(0, 255, 102, 0.3);     /* borda verde suave */;
+    border-radius: 12px;  
+    padding: 20px;     /* espaço POR DENTRO do cartão, entre a borda e o conteúdo */
+    display: flex;
+     margin-bottom: 20px;   /* espaço POR FORA do cartão, no lado de baixo  - criando 
+    espaço entre o cartão oficina e feira*/
+}
+
+.oficina {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff66;
+    border-radius: 12px;  
+    padding: 20px;     /* espaço POR DENTRO do cartão, entre a borda e o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+.feira {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff66;
+    border-radius: 12px;  
+    padding: 20px;     /* espaço POR DENTRO do cartão, entre a borda e o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.agenda {
+background-color: rgba(0, 0, 0, 0.65);    /* fundo escuro semitransparente */
+border: 1px solid rgba(0, 255, 102, 0.3);     /* borda verde suave */
+border-radius: 12px;     /* cantos arredondados */
+  display: grid;
+}border-radius: 12px;  
